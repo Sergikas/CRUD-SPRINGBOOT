@@ -6,21 +6,16 @@ pipeline {
         maven "Maven 3.8.3"
     }
 
-    stages { 
+    stages {    
         stage('Clean'){
             steps{
                 bat "mvn clean"
             }
         }
         
-        stage('Compile') {
+        stage('Package') {
             steps {
-                bat "mvn compile"            
-            }
-          
-        stage('Test') {
-            steps {
-                bat "mvn test"              
+                bat "mvn package"
             }
         }
     }
