@@ -7,7 +7,12 @@ import java.util.List;
 
 public class StudentService {
     private static Map<Long, Student> students = new HashMap<>();
-    private static Long index= 0L;
+    private static Long index= 1L;
+
+    static {
+        Student student1 = new Student(1L,"Sergio","Carrillo",10);
+        students.put(1L,student1);
+    }
 
     public static List<Student> getAllStudents(){
         return new ArrayList<>(students.values());
