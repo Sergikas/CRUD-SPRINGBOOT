@@ -12,7 +12,7 @@ __ReadAll:__
 GET [http://localhost:8090/students]
 
 __Update:__
-PATCH [http://localhost:8090/updateStudent/{studentId}]
+UPDATE [http://localhost:8090/updateStudent/{studentId}]
 
 __Delete:__
 DELETE [http://localhost:8090/deleteStudent/{studentId}]
